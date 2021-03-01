@@ -3,6 +3,10 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\AdministrativeUnitImport as AUI;
+use App\Models\AdministrativeUnit as AU;
+use App\Models\Unit;
 
 class ImportAdministrativeDivision extends Command
 {
