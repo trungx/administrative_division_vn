@@ -8,6 +8,8 @@
 `php artisan migrate`
 
 #### Import database
+setting path in `app/Console/Commands/ImportAdministrativeDivision.php`
+
 `php artisan import:administrative`
 
 #### Export database
