@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\LazyCollection;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -165,3 +166,7 @@ Route::get('/getdb', function() {
         dd($e);
     }
 });
+
+use App\Models\Street;
+
+Route::post('/add-street', 'HomeController@index');
